@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+/* div{
+    height: 200px;
+    background-color:burlywood;
+    width: 200px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border: 2px solid magenta;
+    text-align:center;
+    border-radius:10px ;
+    padding: 1px 2px 3px 4px;
+    margin-top: 50px;
+}
+h1{
+    height: 50px;
+    width: 200px;
+    background-color: aqua;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blueviolet;
+    text-align: center;
+} */
+
+
+/* /////////////////////////Navbar////////////////////// */
+
+#navbar{
+    background-color: black;   
+    height: 60px;
+    
+}
+#logo{
+    color: orange;
+    font-weight: 500px;
+    font-size: 25px; 
+}
+
+a{ 
+    color: white; 
+    margin-right: 200px;
+}
+button{
+    background-color:orange;
+    color: white;
+}
+
+main{
+    height:530px
+}
+
+.contentBox{
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: orange;
+    display: inline-block;
+}
+
+#d1{ 
+    background-color:rgba(200, 100, 50, 0.75)
+}
+#d2{ 
+    background-color:rgba(245, 88, 9, 0.25)
+}
+#d3{ 
+    background-color:rgba(95, 32, 0, 0.5)
+}
+footer{
+    background-color: black;
+    height: 60px;
+}
+#f1{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* #ex{
+    background-color: blue;
+    display: inline;
+} */
+
+/* div{
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    margin: 25px;
+    display: inline-block;
+}
+#b1{
+    background-color: blue;
+}
+
+#b2{
+    background-color:green;
+    display: none;
+}
+
+#b3{
+    background-color:rgba(255,0,0, 0.5);
+} 
+*/

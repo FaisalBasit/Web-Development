@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    font-size: 10px;
+}
+
+#box2{
+    height: 50vh;
+    background-color: blueviolet;
+    margin-left: 25%;
+    font-size: 2em;
+    width: 5rem;
+
+} */
+
+/* div{
+    height: 100px;
+    width: 100px;
+    
+    border: 2px, black, solid;
+    display: inline-block;
+}
+
+#box1{
+    background-color:brown;
+    position:fixed;
+   
+    top:0;
+    width: 100vw;
+   
+}
+
+
+#box2{
+    background-color: aqua;
+    position: relative;
+    top: 1200px;
+    left: 10px;
+    
+}
+
+#box3{
+    background-color: rebeccapurple;
+    position: absolute;
+    top:200px;
+    background-image: url(cat.jpg);
+    background-size: cover;
+
+}
+
+#box4{
+    background-color:tomato;
+    position:sticky;
+    top:20px;
+    left: 20px;
+
+}
+body{
+    background-image: url(cat.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+/* Practice set 5 */
+
+#LN{
+    height: 200px;
+    width: 200px;
+    background-image: url(cat.jpg);
+    background-size:cover;
+    position:fixed;
+    right: 0;
+    top:0;
+}

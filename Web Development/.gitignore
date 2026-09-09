@@ -1,0 +1,1617 @@
+# ============================================================
+# UNIVERSAL .gitignore
+# Suitable for: Node.js, Next.js, React, Python, FastAPI,
+# Django, Java, Go, Rust, PHP, Docker, databases, IDEs, etc.
+# ============================================================
+
+
+# ============================================================
+# 1. ENVIRONMENT VARIABLES / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Local environment variants
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Secret/config files
+*.secret
+*.secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+
+# SSH / credentials
+.ssh/
+id_rsa
+id_rsa.pub
+id_dsa
+id_ecdsa
+id_ed25519
+id_ed25519.pub
+
+# Cloud/service credentials
+credentials.json
+client_secret.json
+service-account.json
+serviceAccount.json
+google-credentials.json
+gcloud-credentials.json
+
+# Firebase
+firebase-debug.log
+.firebase/
+.firebaserc.local
+
+# Terraform secrets/state
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# NOTE:
+# If your project intentionally commits encrypted secrets,
+# explicitly force-add them or adjust these rules.
+
+
+# ============================================================
+# 2. NODE.JS / JAVASCRIPT / TYPESCRIPT
+# ============================================================
+
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+.npmrc.local
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# JavaScript build output
+dist/
+build/
+lib/
+out/
+.eslintcache
+
+# Parcel
+.parcel-cache/
+
+# Turborepo
+.turbo/
+
+# Nx
+.nx/
+
+# Rush
+common/temp/
+common/autoinstallers/
+
+# Vite
+.vite/
+
+# Webpack
+.webpack/
+
+# Rollup
+.rollup.cache/
+
+# Babel
+.babel-cache/
+
+# SWC
+.swc/
+
+# Jest
+.jest/
+
+# Storybook
+.storybook-out/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+
+# Puppeteer
+.puppeteer/
+
+# Selenium
+.selenium/
+
+
+# ============================================================
+# 3. NEXT.JS
+# ============================================================
+
+.next/
+.next/cache/
+.vercel/
+
+# Next.js generated output
+out/
+
+# Next.js trace
+next-env.d.ts
+
+# NOTE:
+# Many teams DO commit next-env.d.ts.
+# If your project relies on it, remove the line above.
+
+
+# ============================================================
+# 4. REACT / FRONTEND BUILD OUTPUT
+# ============================================================
+
+coverage/
+*.lcov
+
+# Generic frontend output
+public/build/
+public/dist/
+
+# Generated static assets
+.cache/
+.cache-loader/
+
+# Angular
+.angular/
+.angular/cache/
+
+# Svelte
+.svelte-kit/
+
+# Astro
+.astro/
+
+# Gatsby
+.cache/
+public/
+
+# Remix
+.build/
+
+
+# ============================================================
+# 5. PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python compiled files
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Pip
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# Packaging
+dist/
+build/
+sdist/
+wheels/
+
+# Python caches
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Poetry
+poetry.lock
+
+# NOTE:
+# Poetry projects commonly SHOULD commit poetry.lock.
+# Remove the line above if reproducible dependency locking is desired.
+
+# PDM
+.pdm.toml
+.pdm-python
+
+# uv
+.uv/
+
+# Conda
+.conda/
+
+# Flask
+instance/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Celery
+celerybeat-schedule
+
+
+# ============================================================
+# 6. JAVA / JVM
+# ============================================================
+
+*.class
+*.jar
+*.war
+*.ear
+
+target/
+out/
+
+.gradle/
+.gradle-cache/
+build/
+
+hs_err_pid*
+replay_pid*
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# NOTE:
+# Maven wrapper JAR is often committed.
+# Remove the rule above if your project uses Maven Wrapper.
+
+# IntelliJ
+.idea/
+
+# Kotlin
+.kotlin/
+
+
+# ============================================================
+# 7. GO
+# ============================================================
+
+bin/
+vendor/
+
+*.test
+*.out
+
+# Go workspace
+go.work.sum
+
+
+# ============================================================
+# 8. RUST
+# ============================================================
+
+target/
+Cargo.lock
+
+# NOTE:
+# Applications generally SHOULD commit Cargo.lock.
+# Libraries may choose not to.
+
+
+# ============================================================
+# 9. PHP / COMPOSER
+# ============================================================
+
+vendor/
+composer.phar
+
+.phpunit.result.cache
+.phpunit.cache/
+
+.php-cs-fixer.cache
+.php-cs-fixer.php
+
+.phpstan/
+.phpstan-cache/
+
+.phpunit.cache/
+
+npm-debug.log
+
+
+# ============================================================
+# 10. RUBY
+# ============================================================
+
+.bundle/
+vendor/bundle/
+.ruby-version
+.ruby-gemset
+
+*.gem
+
+coverage/
+tmp/
+log/
+
+# Rails
+/public/assets/
+/public/packs/
+/public/packs-test/
+/storage/
+/tmp/*
+
+
+# ============================================================
+# 11. C / C++ / CMAKE
+# ============================================================
+
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+
+*.out
+*.app
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+Makefile.in
+compile_commands.json
+
+.acme/
+
+
+# ============================================================
+# 12. SWIFT / XCODE / iOS / macOS DEVELOPMENT
+# ============================================================
+
+DerivedData/
+build/
+*.xcuserstate
+*.xcscmblueprint
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+Pods/
+Carthage/Build/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# iOS provisioning / signing
+*.mobileprovision
+*.provisionprofile
+
+
+# ============================================================
+# 13. ANDROID
+# ============================================================
+
+.gradle/
+local.properties
+
+.idea/
+*.iml
+
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+*.apk
+*.aab
+
+
+# ============================================================
+# 14. DART / FLUTTER
+# ============================================================
+
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Flutter generated files
+.flutter-plugins-dependencies
+
+
+# ============================================================
+# 15. .NET / C#
+# ============================================================
+
+bin/
+obj/
+
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+.vs/
+.vscode/
+
+TestResults/
+BenchmarkDotNet.Artifacts/
+
+*.nupkg
+*.snupkg
+
+packages/
+
+# NuGet
+.nuget/
+
+# ASP.NET
+appsettings.Local.json
+appsettings.Development.json
+appsettings.Staging.json
+
+
+# ============================================================
+# 16. DART / ELIXIR / PHOENIX
+# ============================================================
+
+/_build/
+/deps/
+/.coverage/
+erl_crash.dump
+
+*.ez
+
+
+# ============================================================
+# 17. HASKELL
+# ============================================================
+
+dist/
+dist-newstyle/
+.stack-work/
+.cabal-sandbox/
+cabal.sandbox.config
+
+
+# ============================================================
+# 18. R / DATA SCIENCE
+# ============================================================
+
+.Rhistory
+.RData
+.Ruserdata
+
+renv/library/
+renv/staging/
+
+
+# ============================================================
+# 19. DATABASE FILES
+# ============================================================
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+
+# SQLite journals
+*.sqlite-journal
+*.sqlite3-journal
+*.db-journal
+
+# Local database dumps
+*.sql.gz
+*.dump
+*.bak
+
+# NOTE:
+# DO NOT ignore migration files.
+# DO NOT ignore schema files.
+# DO NOT ignore seed files.
+
+
+# ============================================================
+# 20. DOCKER
+# ============================================================
+
+.docker/
+docker-data/
+docker-volumes/
+
+# Local Docker overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker logs
+docker/*.log
+
+# Docker secrets
+docker-secrets/
+secrets/
+
+
+# ============================================================
+# 21. KUBERNETES
+# ============================================================
+
+.kube/
+*.kubeconfig
+
+# Helm generated files
+charts/*/charts/
+charts/*/tmp/
+
+# Local Kubernetes secrets
+k8s/secrets/
+kubernetes/secrets/
+
+
+# ============================================================
+# 22. TERRAFORM / INFRASTRUCTURE
+# ============================================================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Terraform variable examples are allowed
+!*.tfvars.example
+
+crash.log
+crash.*.log
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+
+# ============================================================
+# 23. SERVERLESS / CLOUD
+# ============================================================
+
+.serverless/
+.aws-sam/
+.sam/
+.netlify/
+.vercel/
+
+# AWS
+.aws/
+.aws-sam/
+
+# Local cloud credentials
+.aws/credentials
+.aws/config
+
+# SST
+.sst/
+
+# Pulumi
+.pulumi/
+Pulumi.*.yaml
+
+# Cloudflare
+.wrangler/
+.dev.vars
+
+# Firebase
+.firebase/
+
+
+# ============================================================
+# 24. VERCEL
+# ============================================================
+
+.vercel/
+
+
+# ============================================================
+# 25. NETLIFY
+# ============================================================
+
+.netlify/
+
+# Netlify local state
+.netlify/state.json
+
+
+# ============================================================
+# 26. IDEs / EDITORS
+# ============================================================
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Uncomment if you DON'T want any VS Code configuration tracked:
+# .vscode/
+
+# JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+.nb-gradle/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# Visual Studio
+.vs/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Cursor
+.cursor/
+
+# Zed
+.zed/
+
+# Fleet
+.fleet/
+
+# Windsurf
+.windsurf/
+
+
+# ============================================================
+# 27. OPERATING SYSTEM FILES
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# macOS folders
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Windows installer files
+*.cab
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# WSL
+.wslconfig
+
+
+# ============================================================
+# 28. LOGS
+# ============================================================
+
+*.log
+logs/
+log/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+debug.log
+error.log
+combined.log
+
+*.log.*
+*.log.gz
+
+
+# ============================================================
+# 29. TEMPORARY FILES
+# ============================================================
+
+tmp/
+temp/
+.tmp/
+.temp/
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+*.swp
+*.swo
+*~
+
+# Lock files generated by running processes
+*.pid
+*.pid.lock
+
+
+# ============================================================
+# 30. CACHE
+# ============================================================
+
+.cache/
+.cache-loader/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.rspack-cache/
+.webpack-cache/
+
+# Generic application cache
+cache/
+caches/
+
+# OS caches
+Thumbs.db
+.DS_Store
+
+
+# ============================================================
+# 31. TEST / COVERAGE OUTPUT
+# ============================================================
+
+coverage/
+.nyc_output/
+.coverage/
+htmlcov/
+
+test-results/
+playwright-report/
+blob-report/
+
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+
+# ============================================================
+# 32. GENERATED FILES
+# ============================================================
+
+generated/
+generated-files/
+_codegen/
+codegen/
+*.generated.*
+*.generated
+*.gen.*
+
+# API clients
+openapi-generated/
+swagger-generated/
+
+# ORM generated output
+prisma/generated/
+
+# NOTE:
+# If generated code is required in production and not generated
+# during deployment, remove the relevant ignore rule.
+
+
+# ============================================================
+# 33. UPLOADS / USER-GENERATED CONTENT
+# ============================================================
+
+uploads/
+upload/
+public/uploads/
+storage/uploads/
+
+# User-generated local media
+*.userfile
+
+# NOTE:
+# Do not use these rules if your repository intentionally stores
+# static assets.
+
+
+# ============================================================
+# 34. MEDIA / LARGE LOCAL FILES
+# ============================================================
+
+# Video
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Audio
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# Large archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.iso
+
+# Disk images
+*.img
+*.dmg
+
+
+# ============================================================
+# 35. DOCUMENTS / OFFICE TEMP FILES
+# ============================================================
+
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
+
+*.swp
+
+
+# ============================================================
+# 36. AI / ML LOCAL ARTIFACTS
+# ============================================================
+
+# Model files
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.gguf
+*.ggml
+*.bin
+
+# ML experiment outputs
+runs/
+wandb/
+mlruns/
+.mlruns/
+.tensorboard/
+
+# Hugging Face
+.cache/huggingface/
+.huggingface/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# ============================================================
+# 37. LOCAL AI / AGENT DATA
+# ============================================================
+
+.ai/
+.ai-cache/
+.agent/
+.agent-cache/
+.agents/
+.cursor/
+.claude/
+
+# Local vector databases
+chroma/
+.chromadb/
+vector_db/
+vectorstore/
+qdrant_storage/
+.lancedb/
+
+# Local embeddings
+embeddings/
+embeddings-cache/
+
+
+# ============================================================
+# 38. PLAYWRIGHT / CYPRESS / BROWSER DATA
+# ============================================================
+
+playwright-report/
+test-results/
+blob-report/
+
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Browser profiles
+chrome-profile/
+chromium-profile/
+browser-data/
+playwright/.cache/
+
+
+# ============================================================
+# 39. LOCAL DEVELOPMENT DATABASE / SERVICES
+# ============================================================
+
+.pgdata/
+postgres-data/
+mysql-data/
+mariadb-data/
+redis-data/
+mongo-data/
+mongodb-data/
+elasticsearch-data/
+
+# Local service state
+.local/
+.localdata/
+
+
+# ============================================================
+# 40. REDIS
+# ============================================================
+
+dump.rdb
+appendonly.aof
+
+
+# ============================================================
+# 41. MONGODB
+# ============================================================
+
+mongodb/
+mongodata/
+
+
+# ============================================================
+# 42. GENERATED API / CLIENT ARTIFACTS
+# ============================================================
+
+openapi/
+swagger/
+api-generated/
+client-generated/
+
+# Exception:
+# Keep manually maintained API specifications.
+
+
+# ============================================================
+# 43. BUILD / RELEASE ARTIFACTS
+# ============================================================
+
+release/
+releases/
+artifacts/
+artifact/
+packages/
+package/
+dist/
+build/
+out/
+
+*.tar.gz
+*.zip
+
+
+# ============================================================
+# 44. MOBILE BUILD ARTIFACTS
+# ============================================================
+
+*.apk
+*.aab
+*.ipa
+
+fastlane/test_output/
+fastlane/screenshots/
+
+
+# ============================================================
+# 45. CERTIFICATES / SIGNING
+# ============================================================
+
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Signing directories
+certificates/
+certs/
+keys/
+private/
+
+
+# ============================================================
+# 46. LOCAL CONFIGURATION
+# ============================================================
+
+config.local.*
+settings.local.*
+local.config.*
+local.settings.*
+
+*.local.json
+*.local.yaml
+*.local.yml
+*.local.toml
+
+
+# ============================================================
+# 47. BACKUPS
+# ============================================================
+
+backup/
+backups/
+*.backup
+*.bak
+*.old
+*.orig
+
+# Database backups
+*.sql.bak
+*.sqlite.bak
+
+
+# ============================================================
+# 48. GENERATED DOCUMENTATION
+# ============================================================
+
+docs/_build/
+site/
+mkdocs_build/
+.docusaurus/
+typedoc/
+jsdoc/
+
+
+# ============================================================
+# 49. SENTRY / ERROR REPORTING LOCAL DATA
+# ============================================================
+
+.sentry/
+.sentryclirc.local
+
+
+# ============================================================
+# 50. LOCAL DEVELOPMENT TOOLS
+# ============================================================
+
+.direnv/
+.envrc
+
+.ngrok/
+.ngrok2/
+
+.localtunnel/
+
+# Tunnel credentials
+.ngrok.yml
+
+
+# ============================================================
+# 51. PACKAGE MANAGER TEMP FILES
+# ============================================================
+
+.npm/
+.yarn/
+.pnpm/
+.pnpm-store/
+
+*.tgz
+
+
+# ============================================================
+# 52. MONOREPO TEMPORARY FILES
+# ============================================================
+
+.turbo/
+.nx/
+.lerna/
+.yarn/
+
+
+# ============================================================
+# 53. PROCESS MANAGER
+# ============================================================
+
+.pids/
+*.pid
+
+# PM2
+.pm2/
+ecosystem.config.local.js
+ecosystem.config.local.cjs
+
+
+# ============================================================
+# 54. LOCAL SOCKETS
+# ============================================================
+
+*.sock
+*.socket
+
+
+# ============================================================
+# 55. SECURITY / SCANNING OUTPUT
+# ============================================================
+
+.semgrep/
+.bandit/
+.snyk/
+
+# Local security reports
+security-report/
+security-reports/
+
+# Dependency scanning output
+dependency-check-report/
+
+
+# ============================================================
+# 56. PERFORMANCE / PROFILING
+# ============================================================
+
+.prof
+*.profraw
+*.profdata
+profile/
+profiles/
+flamegraphs/
+
+
+# ============================================================
+# 57. GENERATED LOCK / TEMP FILES
+# ============================================================
+
+*.lock.tmp
+*.lockfile
+
+
+# ============================================================
+# 58. LOCAL CERTIFICATE AUTHORITIES
+# ============================================================
+
+mkcert/
+*.rootCA.pem
+
+
+# ============================================================
+# 59. DEV DATABASE / ORM
+# ============================================================
+
+# Prisma local generated artifacts
+.prisma/
+
+# Drizzle local artifacts
+.drizzle/
+
+# Drizzle migrations are intentionally NOT ignored.
+
+# SQL development dumps
+db-dumps/
+database-dumps/
+
+
+# ============================================================
+# 60. SCRATCH / PERSONAL DEVELOPMENT FILES
+# ============================================================
+
+scratch/
+scratchpad/
+notes.local/
+todo.local/
+experimental/
+experiments/
+
+# Personal scripts
+scripts/local/
+scripts/private/
+
+# Temporary root files
+test-local.*
+debug-local.*
+dev-local.*
+
+
+# ============================================================
+# 61. GENERATED ENVIRONMENT / DEPLOYMENT FILES
+# ============================================================
+
+.vercel/
+.netlify/
+.serverless/
+.aws-sam/
+.sst/
+.wrangler/
+
+
+# ============================================================
+# 62. CHAT / AI TOOL LOCAL STATE
+# ============================================================
+
+.claude/
+.cursor/
+.copilot/
+.aider/
+continue/
+.continue/
+
+# Local AI prompt/cache data
+prompts/local/
+ai-cache/
+llm-cache/
+
+
+# ============================================================
+# 63. SECRET MANAGEMENT TOOLS
+# ============================================================
+
+.secrets/
+.secret/
+vault/
+vault-data/
+
+# Doppler
+.doppler/
+
+# 1Password local files
+.op/
+
+
+# ============================================================
+# 64. LOCAL MAIL / EMAIL TESTING
+# ============================================================
+
+mailhog/
+mailpit/
+.email-data/
+mail-data/
+
+
+# ============================================================
+# 65. LOCAL MESSAGE QUEUES
+# ============================================================
+
+rabbitmq-data/
+kafka-data/
+kafka-logs/
+.nats/
+nats-data/
+
+
+# ============================================================
+# 66. LOCAL OBSERVABILITY
+# ============================================================
+
+prometheus-data/
+grafana-data/
+loki-data/
+jaeger-data/
+otel-data/
+
+
+# ============================================================
+# 67. LOCAL SEARCH ENGINES
+# ============================================================
+
+elasticsearch-data/
+opensearch-data/
+.meilisearch/
+typesense-data/
+
+
+# ============================================================
+# 68. LOCAL STORAGE
+# ============================================================
+
+.minio/
+minio-data/
+s3-data/
+
+
+# ============================================================
+# 69. IDE / TOOLING STATE
+# ============================================================
+
+.history/
+.project/
+.settings/
+.vscode/*.log
+
+# VS Code local history
+.history/
+
+# JetBrains local history
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries/
+
+
+# ============================================================
+# 70. OS / FILE MANAGER METADATA
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.Trash-*
+.directory
+
+
+# ============================================================
+# 71. GIT INTERNAL / LOCAL STATE
+# ============================================================
+
+# Git metadata should NEVER normally be ignored.
+# Do NOT add .git/ here because that can hide repository
+# problems and is unnecessary.
+
+# Git GUI / tooling
+*.orig
+
+
+# ============================================================
+# 72. LARGE LOCAL DATASETS
+# ============================================================
+
+datasets/
+dataset/
+data/raw/
+data/processed/
+data/tmp/
+
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.pickle
+*.pkl
+
+# IMPORTANT:
+# Remove the rules above if your repository intentionally
+# versions datasets.
+
+
+# ============================================================
+# 73. LOCAL EXPORTS
+# ============================================================
+
+exports/
+export/
+generated-exports/
+reports/generated/
+
+*.xlsx
+*.xls
+*.docx
+
+
+# ============================================================
+# 74. LOCAL SCREENSHOTS
+# ============================================================
+
+screenshots/
+screen-shots/
+tmp/screenshots/
+
+
+# ============================================================
+# 75. LOCAL RECORDINGS
+# ============================================================
+
+recordings/
+recording/
+videos/
+audio/
+
+
+# ============================================================
+# 76. LOCAL DEVELOPMENT REPORTS
+# ============================================================
+
+reports/local/
+reports/generated/
+test-reports/
+benchmark-results/
+
+
+# ============================================================
+# 77. CACHE DIRECTORIES — GENERIC
+# ============================================================
+
+**/.cache/
+**/cache/
+**/__pycache__/
+**/.pytest_cache/
+**/node_modules/
+
+
+# ============================================================
+# 78. TEMP FILES — GENERIC
+# ============================================================
+
+**/*.tmp
+**/*.temp
+**/*.bak
+**/*.swp
+**/*.swo
+**/*~
+
+
+# ============================================================
+# 79. LOGS — GENERIC
+# ============================================================
+
+**/*.log
+**/logs/
+
+
+# ============================================================
+# 80. LOCAL ENV FILES — GENERIC
+# ============================================================
+
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# Allow safe templates
+!**/.env.example
+!**/.env.sample
+!**/.env.template
+
+
+# ============================================================
+# 81. FINAL SAFETY NET
+# ============================================================
+
+# Private local files
+.private/
+.private-data/
+.local-secrets/
+secret-data/
+
+# Temporary generated files
+.generated/
+.temp/
+.tmp/
+
+# OS/editor leftovers
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*~
+
+# Crash dumps
+*.dmp
+*.dump
+core
+core.*
+
+
+# ============================================================
+# END
+# ============================================================

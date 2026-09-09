@@ -1,0 +1,44 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+}
+body{
+    text-align: center;
+}
+
+div{
+    border: solid black 2px;
+    border-style:solid;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+}
+#container{
+    height: 200px;
+    width: 800px;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    
+}
+#item1{
+    background-color: aqua;
+    
+}
+#item2{
+    background-color: brown;
+    
+}
+#item3{
+    background-color:chartreuse;
+    
+}
+#item4{
+    background-color:chocolate;
+    
+}
+#item5{
+    background-color:darkgoldenrod;
+   
+}
